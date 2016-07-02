@@ -17,6 +17,12 @@ public:
 
 private:
     Ui::Dialog *ui;
+
+signals:
+    void openFileToPath(const QString &str);
+
+private slots:
+    void okClicked();
 };
 
 #endif // DIALOG_H
